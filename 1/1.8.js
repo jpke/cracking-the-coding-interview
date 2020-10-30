@@ -1,5 +1,9 @@
 // Zero Matrix
-// For an MxN matrix, if an element is 0, set it's entire row and columen to 0
+// For an MxN matrix, if an element is 0, set it's entire row and column to 0
+// check if first row or column has a 0, record in variables
+// iterate through rest of matrix, if an element is 0, set the first element in its row and column to 0
+// iterate through first row and column, if an element is 0, set all elements in corresponding row or column to 0
+// refer to variables recording if first row and column had a 0 initially, setting entire first row or column to 0 if so
 
 const nullifyRowOrColumn = (matrixArray, rowOrColumnIndex, type) => {
   if (type === "row") {
