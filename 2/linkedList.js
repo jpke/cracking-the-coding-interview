@@ -3,6 +3,7 @@ export default class LinkedListNode {
     this.data = data;
     this.next = null;
   }
+
   addToList(newNode) {
     let pointer = this.next;
     if (!this.next) return (this.next = newNode);
@@ -10,6 +11,16 @@ export default class LinkedListNode {
       pointer = pointer.next;
     }
     pointer.next = newNode;
+  }
+  
+  getLinkedListLength() {
+    let length = 1;
+    let pointer = this.next;
+    while (pointer.next) {
+      length += 1;
+      pointer = pointer.next;
+    }
+    return length;
   }
 }
 
