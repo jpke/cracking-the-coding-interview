@@ -15,7 +15,7 @@ export default class LinkedListNode {
   
   getLinkedListLength() {
     let length = 1;
-    let pointer = this.next;
+    let pointer = this;
     while (pointer.next) {
       length += 1;
       pointer = pointer.next;

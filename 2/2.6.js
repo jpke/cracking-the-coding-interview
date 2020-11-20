@@ -1,7 +1,8 @@
 // Palindrome
-// Check if a linked list is a palindrome
+// Check if a linked list is a palindrome, via reverse and compare
+// reverse a linked list, then compare with the original, checking that data nodes match
 
-const { default: LinkedListNode } = require("./linkedList");
+import { default as LinkedListNode } from "./linkedList";
 
 const reverseAndClone = (linkedListToReverse) => {
   let reversedListHead = null;
