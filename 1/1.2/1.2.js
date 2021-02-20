@@ -1,4 +1,4 @@
-// determine is a string is a permutation of another
+// determine if a string is a permutation of another
 // early exit if the strings are not the same length
 // create an array of 0's with length 128 (assuming 128 ASCII character set)
 // iterate through first string, incrementing the array item corresponding to each character's ASCII integer each time the character is found
@@ -25,7 +25,7 @@ const permuation = (strA, strB) => {
   return true;
 };
 
-console.log(permuation("stringA", "Agnirts"));
-console.log(permuation("stringA", "StringA"));
-console.log(permuation("stringA", "stringAA"));
-console.log(permuation("stringA", "stringB"));
+console.log(permuation("stringA", "Agnirts")); // true
+console.log(permuation("stringA", "StringA")); // false
+console.log(permuation("stringA", "stringAA"));// false
+console.log(permuation("stringA", "stringB")); // false
